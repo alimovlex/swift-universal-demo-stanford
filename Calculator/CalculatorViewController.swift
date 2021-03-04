@@ -2,63 +2,50 @@
 //  ViewController.swift
 //  Calculator
 //
-//  Created by robot on 2/12/21.
+//  Created by robot on 2/28/21.
 //  Copyright © 2021 robot. All rights reserved.
 //
 
-import UIKit;
+import UIKit
 
-class CalculatorViewController: UIViewController
-{
-    @IBOutlet weak var display: UILabel!;
+class CalculatorViewController: UIViewController {
+
+    @IBOutlet private weak var display: UILabel!;
     
-    var userIsInTheMiddleOfTypingAnumber:Bool = false;
+    private var userIsInTheMiddleOfTyping = false;
     
-    var brain = CalculatorBrain();
-    
-    @IBAction func appendDigit(sender: UIButton) {
-        let digit = sender.currentTitle;
-        if userIsInTheMiddleOfTypingAnumber {
-        display.text = display.text! + digit!;
-        }
-        else
-        {
+    @IBAction private func touchDigit(_ sender: UIButton) {
+        let digit = sender.currentTitle!;
+        if userIsInTheMiddleOfTyping {
+        let textCurrentlyInDisplay = display.text!;
+        display.text = textCurrentlyInDisplay + digit;
+        } else {
             display.text = digit;
-            userIsInTheMiddleOfTypingAnumber = true;
         }
-        //print("digit = \(digit!)");
-    }
-    @IBAction func operate(sender: UIButton) {
-        if userIsInTheMiddleOfTypingAnumber {
-            enter();
-        }
-        if let operation = sender.currentTitle {
-            if let result = brain.performOperation(symbol: operation) {
-                displayValue = result;
-            }
-            else {
-                displayValue = 0;
-            }
-        }
+        userIsInTheMiddleOfTyping = true;
     }
     
-    @IBAction func enter() {
-        userIsInTheMiddleOfTypingAnumber = false;
-        if let result = brain.pushOperand(operand: displayValue) {
-            displayValue = result;
-        }
-        else {
-            displayValue = 0;
-        }
-    }
-    var displayValue: Double {
+   private var displayValue: Double {
         get {
-            return (display.text! as NSString).doubleValue;
+            return Double(display.text!)!;
         }
         set {
-            display.text = "\(newValue)";
+            display.text = String(newValue);
         }
     }
     
+    private var brain = CalculatorBrain();
+    
+    @IBAction private func performOperation(_ sender: UIButton) {
+        if userIsInTheMiddleOfTyping {
+            brain.setOperand(operand: displayValue);
+            userIsInTheMiddleOfTyping = false;
+        }
+        if let mathematicalSymbol = sender.currentTitle {
+            brain.performOperation(symbol: mathematicalSymbol);
+        }
+        displayValue = brain.result;
+    }
 }
+
 

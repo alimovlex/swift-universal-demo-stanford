@@ -2,12 +2,11 @@
 //  AppDelegate.swift
 //  Calculator
 //
-//  Created by robot on 2/12/21.
+//  Created by robot on 2/28/21.
 //  Copyright © 2021 robot. All rights reserved.
 //
 
 import UIKit
-
 
 class CalculatorAppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -19,7 +18,6 @@ class CalculatorAppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     // MARK: UISceneSession Lifecycle
-
     @available(iOS 13.0, *)
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         // Called when a new scene session is being created.

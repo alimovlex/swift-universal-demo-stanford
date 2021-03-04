@@ -2,7 +2,7 @@
 //  CalculatorBrain.swift
 //  Calculator
 //
-//  Created by robot on 2/13/21.
+//  Created by robot on 2/28/21.
 //  Copyright © 2021 robot. All rights reserved.
 //
 
@@ -10,78 +10,63 @@ import Foundation
 
 class CalculatorBrain
 {
-   private enum Op {
-        case Operand(Double);
-        case UnaryOperation(String, (Double) -> Double);
-        case BinaryOperation(String, (Double, Double) -> Double);
+    private var accumulator = 0.0;
+    func setOperand(operand: Double) {
+        accumulator = operand;
+    }
+   
+    private var operations: Dictionary<String, Operation> = [
+                                                  "π": Operation.Constant(Double.pi),
+                                                  "e": Operation.UnaryOperation(exp),
+                                                  "√": Operation.UnaryOperation(sqrt),
+                                                  "±": Operation.UnaryOperation({-$0}),
+                                                  "cos": Operation.UnaryOperation(cos),
+                                            "✖️": Operation.BinaryOperation({$0 * $1}),
+                                            "➗": Operation.BinaryOperation({$0 / $1}),
+                                            "➕": Operation.BinaryOperation({$0 + $1}),
+                                            "➖": Operation.BinaryOperation({$0 - $1}),
+                                                  "=": Operation.Equals];
     
-    var description: String {
+   private enum Operation {
+        case Constant(Double);
+        case UnaryOperation((Double) -> Double);
+        case BinaryOperation((Double, Double) -> Double);
+        case Equals
+    }
+    
+    func performOperation(symbol: String) {
+        if let operation = operations[symbol] {
+            switch operation {
+            case .Constant(let value):
+                accumulator = value;
+            case .UnaryOperation(let function):
+                accumulator = function(accumulator);
+            case .BinaryOperation(let function):
+                executePendingBinaryOperation();
+                pending = PendingBinaryOperationInfo(binaryFunction: function, firstOperand: accumulator);
+            case .Equals:
+                executePendingBinaryOperation();
+            }
+        }
+    }
+    
+    private func executePendingBinaryOperation() {
+        if pending != nil {
+            accumulator = pending!.binaryFunction(pending!.firstOperand, accumulator);
+            pending = nil;
+        }
+    }
+    
+    private var pending: PendingBinaryOperationInfo?;
+    
+   private struct PendingBinaryOperationInfo {
+        var binaryFunction: (Double, Double) -> Double;
+        var firstOperand: Double;
+    }
+    
+    var result: Double {
         get {
-            switch self {
-            case .Operand(let operand):
-                return "\(operand)";
-            case .UnaryOperation(let symbol, _):
-                return symbol;
-            case .BinaryOperation(let symbol, _):
-                return symbol;
-            }
+            return accumulator;
         }
     }
-    }
-   private var opStack = [Op]();
-    private var knownOps = [String:Op]();
-    
-    init() {
-        func learnOp(op: Op) {
-            knownOps[op.description] = op;
-        }
-        learnOp(op: Op.BinaryOperation("✖️", *));
-        learnOp(op: Op.BinaryOperation("➗", {$1/$0}));
-        learnOp(op: Op.BinaryOperation("➕", +));
-        learnOp(op: Op.BinaryOperation("➖", {$1-$0}));
-        learnOp(op: Op.UnaryOperation("√", sqrt));
-    }
-    
-    private func evaluate(ops: [Op]) -> (result: Double?, remainingOps: [Op])
-    {
-        if !ops.isEmpty {
-            var remainingOps = ops;
-            let op = remainingOps.removeLast();
-            switch op {
-            case .Operand(let operand):
-                return (operand, remainingOps);
-            case .UnaryOperation(_, let operation):
-                let operandEvaluation = evaluate(ops:remainingOps);
-                if let operand = operandEvaluation.result {
-                    return (operation(operand), operandEvaluation.remainingOps);
-                }
-            case .BinaryOperation(_, let operation):
-                let op1Evaluation = evaluate(ops:remainingOps);
-                if let operand1 = op1Evaluation.result {
-                    let op2Evaluation = evaluate(ops: op1Evaluation.remainingOps);
-                    if let operand2 = op2Evaluation.result {
-                        return (operation(operand1, operand2), op2Evaluation.remainingOps);
-                    }
-                }
-            }
-        }
-        return (nil, ops);
-    }
-    
-    func evaluate() -> Double? {
-        let (result, remainder) = evaluate(ops: opStack);
-        return result;
-    }
-    
-    func pushOperand(operand:Double) -> Double? {
-        opStack.append(Op.Operand(operand));
-        return evaluate();
-    }
-    
-    func performOperation(symbol: String) -> Double? {
-        if let operation = knownOps[symbol] {
-            opStack.append(operation);
-        }
-        return evaluate();
-    }
-};
+}
