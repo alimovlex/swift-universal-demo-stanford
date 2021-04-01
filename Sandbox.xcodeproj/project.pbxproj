@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E27354D426167650000EB43C /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27354CA26167650000EB43C /* ImageViewController.swift */; };
+		E27354D726167650000EB43C /* CassiniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27354CF26167650000EB43C /* CassiniViewController.swift */; };
+		E27354D826167650000EB43C /* DemoURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27354D026167650000EB43C /* DemoURL.swift */; };
+		E27354D926167650000EB43C /* CassiniAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27354D126167650000EB43C /* CassiniAppDelegate.swift */; };
 		E2A00C6125F14E790096474D /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A00C5E25F14E790096474D /* CalculatorBrain.swift */; };
 		E2A00C6225F14E790096474D /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A00C5F25F14E790096474D /* CalculatorViewController.swift */; };
 		E2A00C6325F14E790096474D /* CalculatorAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A00C6025F14E790096474D /* CalculatorAppDelegate.swift */; };
@@ -23,10 +27,6 @@
 		E2D2A69025EAA85D008094A1 /* PsychologistAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D2A68A25EAA85D008094A1 /* PsychologistAppDelegate.swift */; };
 		E2D2A69125EAA85D008094A1 /* Faceview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D2A68B25EAA85D008094A1 /* Faceview.swift */; };
 		E2D2A69225EAA85D008094A1 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D2A68C25EAA85D008094A1 /* TextViewController.swift */; };
-		E2D2A69D25EAAA90008094A1 /* CassiniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D2A69425EAAA90008094A1 /* CassiniViewController.swift */; };
-		E2D2A69F25EAAA90008094A1 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D2A69625EAAA90008094A1 /* ImageViewController.swift */; };
-		E2D2A6A225EAAA90008094A1 /* DemoURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D2A69B25EAAA90008094A1 /* DemoURL.swift */; };
-		E2D2A6A325EAAA90008094A1 /* CassiniAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D2A69C25EAAA90008094A1 /* CassiniAppDelegate.swift */; };
 		E2E3723925E9CB5A0006C50B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E3723825E9CB5A0006C50B /* AppDelegate.swift */; };
 		E2E3723D25E9CB5A0006C50B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E3723C25E9CB5A0006C50B /* ViewController.swift */; };
 		E2E3724025E9CB5A0006C50B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2E3723E25E9CB5A0006C50B /* Main.storyboard */; };
@@ -35,6 +35,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E27354CA26167650000EB43C /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		E27354CF26167650000EB43C /* CassiniViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CassiniViewController.swift; sourceTree = "<group>"; };
+		E27354D026167650000EB43C /* DemoURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoURL.swift; sourceTree = "<group>"; };
+		E27354D126167650000EB43C /* CassiniAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CassiniAppDelegate.swift; sourceTree = "<group>"; };
 		E2A00C5E25F14E790096474D /* CalculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 		E2A00C5F25F14E790096474D /* CalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		E2A00C6025F14E790096474D /* CalculatorAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorAppDelegate.swift; sourceTree = "<group>"; };
@@ -51,10 +55,6 @@
 		E2D2A68A25EAA85D008094A1 /* PsychologistAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PsychologistAppDelegate.swift; sourceTree = "<group>"; };
 		E2D2A68B25EAA85D008094A1 /* Faceview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Faceview.swift; sourceTree = "<group>"; };
 		E2D2A68C25EAA85D008094A1 /* TextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
-		E2D2A69425EAAA90008094A1 /* CassiniViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CassiniViewController.swift; sourceTree = "<group>"; };
-		E2D2A69625EAAA90008094A1 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
-		E2D2A69B25EAAA90008094A1 /* DemoURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoURL.swift; sourceTree = "<group>"; };
-		E2D2A69C25EAAA90008094A1 /* CassiniAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CassiniAppDelegate.swift; sourceTree = "<group>"; };
 		E2E3723525E9CB5A0006C50B /* Sandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2E3723825E9CB5A0006C50B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2E3723C25E9CB5A0006C50B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +75,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E27354C826167650000EB43C /* Cassini */ = {
+			isa = PBXGroup;
+			children = (
+				E27354CA26167650000EB43C /* ImageViewController.swift */,
+				E27354CF26167650000EB43C /* CassiniViewController.swift */,
+				E27354D026167650000EB43C /* DemoURL.swift */,
+				E27354D126167650000EB43C /* CassiniAppDelegate.swift */,
+			);
+			path = Cassini;
+			sourceTree = "<group>";
+		};
 		E2A00C5D25F14E790096474D /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,22 +130,11 @@
 			path = Psychologist;
 			sourceTree = "<group>";
 		};
-		E2D2A69325EAAA90008094A1 /* Cassini */ = {
-			isa = PBXGroup;
-			children = (
-				E2D2A69425EAAA90008094A1 /* CassiniViewController.swift */,
-				E2D2A69625EAAA90008094A1 /* ImageViewController.swift */,
-				E2D2A69B25EAAA90008094A1 /* DemoURL.swift */,
-				E2D2A69C25EAAA90008094A1 /* CassiniAppDelegate.swift */,
-			);
-			path = Cassini;
-			sourceTree = "<group>";
-		};
 		E2E3722C25E9CB5A0006C50B = {
 			isa = PBXGroup;
 			children = (
+				E27354C826167650000EB43C /* Cassini */,
 				E2A00C5D25F14E790096474D /* Calculator */,
-				E2D2A69325EAAA90008094A1 /* Cassini */,
 				E2D2A68625EAA85D008094A1 /* Psychologist */,
 				E2D2A66225EAA4EE008094A1 /* Autolayout */,
 				E2D2A64225EA9BAD008094A1 /* Dropit */,
@@ -235,17 +235,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E27354D926167650000EB43C /* CassiniAppDelegate.swift in Sources */,
 				E2A00C6325F14E790096474D /* CalculatorAppDelegate.swift in Sources */,
-				E2D2A6A325EAAA90008094A1 /* CassiniAppDelegate.swift in Sources */,
 				E2D2A64E25EA9BAD008094A1 /* BezierPathsView.swift in Sources */,
-				E2D2A69D25EAAA90008094A1 /* CassiniViewController.swift in Sources */,
-				E2D2A69F25EAAA90008094A1 /* ImageViewController.swift in Sources */,
 				E2D2A65125EA9BAD008094A1 /* DropitBehavior.swift in Sources */,
+				E27354D726167650000EB43C /* CassiniViewController.swift in Sources */,
 				E2D2A67025EAA4EE008094A1 /* AutolayoutAppDelegate.swift in Sources */,
 				E2D2A64C25EA9BAD008094A1 /* DropitViewController.swift in Sources */,
 				E2D2A65225EA9BAD008094A1 /* DropitAppDelegate.swift in Sources */,
 				E2D2A69225EAA85D008094A1 /* TextViewController.swift in Sources */,
-				E2D2A6A225EAAA90008094A1 /* DemoURL.swift in Sources */,
+				E27354D826167650000EB43C /* DemoURL.swift in Sources */,
 				E2D2A66D25EAA4EE008094A1 /* User.swift in Sources */,
 				E2D2A68F25EAA85D008094A1 /* PsychologistViewController.swift in Sources */,
 				E2D2A66B25EAA4EE008094A1 /* AutolayoutViewController.swift in Sources */,
@@ -255,6 +254,7 @@
 				E2D2A69025EAA85D008094A1 /* PsychologistAppDelegate.swift in Sources */,
 				E2E3723925E9CB5A0006C50B /* AppDelegate.swift in Sources */,
 				E2A00C6225F14E790096474D /* CalculatorViewController.swift in Sources */,
+				E27354D426167650000EB43C /* ImageViewController.swift in Sources */,
 				E2A00C6125F14E790096474D /* CalculatorBrain.swift in Sources */,
 				E2D2A68D25EAA85D008094A1 /* DiagnosedHappinessViewController.swift in Sources */,
 			);
@@ -408,7 +408,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.alimovlex.Sandbox;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alimovlex.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -427,7 +427,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.alimovlex.Sandbox;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alimovlex.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
