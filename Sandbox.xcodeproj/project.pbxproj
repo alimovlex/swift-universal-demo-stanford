@@ -10,21 +10,16 @@
 		E27354D426167650000EB43C /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27354CA26167650000EB43C /* ImageViewController.swift */; };
 		E27354D726167650000EB43C /* CassiniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27354CF26167650000EB43C /* CassiniViewController.swift */; };
 		E27354D826167650000EB43C /* DemoURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27354D026167650000EB43C /* DemoURL.swift */; };
-		E27354D926167650000EB43C /* CassiniAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27354D126167650000EB43C /* CassiniAppDelegate.swift */; };
 		E2A00C6125F14E790096474D /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A00C5E25F14E790096474D /* CalculatorBrain.swift */; };
 		E2A00C6225F14E790096474D /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A00C5F25F14E790096474D /* CalculatorViewController.swift */; };
-		E2A00C6325F14E790096474D /* CalculatorAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A00C6025F14E790096474D /* CalculatorAppDelegate.swift */; };
 		E2D2A64C25EA9BAD008094A1 /* DropitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D2A64325EA9BAD008094A1 /* DropitViewController.swift */; };
 		E2D2A64E25EA9BAD008094A1 /* BezierPathsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D2A64525EA9BAD008094A1 /* BezierPathsView.swift */; };
 		E2D2A65125EA9BAD008094A1 /* DropitBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D2A64A25EA9BAD008094A1 /* DropitBehavior.swift */; };
-		E2D2A65225EA9BAD008094A1 /* DropitAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D2A64B25EA9BAD008094A1 /* DropitAppDelegate.swift */; };
 		E2D2A66B25EAA4EE008094A1 /* AutolayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D2A66325EAA4EE008094A1 /* AutolayoutViewController.swift */; };
 		E2D2A66D25EAA4EE008094A1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D2A66525EAA4EE008094A1 /* User.swift */; };
-		E2D2A67025EAA4EE008094A1 /* AutolayoutAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D2A66A25EAA4EE008094A1 /* AutolayoutAppDelegate.swift */; };
 		E2D2A68D25EAA85D008094A1 /* DiagnosedHappinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D2A68725EAA85D008094A1 /* DiagnosedHappinessViewController.swift */; };
 		E2D2A68E25EAA85D008094A1 /* HappinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D2A68825EAA85D008094A1 /* HappinessViewController.swift */; };
 		E2D2A68F25EAA85D008094A1 /* PsychologistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D2A68925EAA85D008094A1 /* PsychologistViewController.swift */; };
-		E2D2A69025EAA85D008094A1 /* PsychologistAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D2A68A25EAA85D008094A1 /* PsychologistAppDelegate.swift */; };
 		E2D2A69125EAA85D008094A1 /* Faceview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D2A68B25EAA85D008094A1 /* Faceview.swift */; };
 		E2D2A69225EAA85D008094A1 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D2A68C25EAA85D008094A1 /* TextViewController.swift */; };
 		E2E3723925E9CB5A0006C50B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E3723825E9CB5A0006C50B /* AppDelegate.swift */; };
@@ -38,21 +33,16 @@
 		E27354CA26167650000EB43C /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		E27354CF26167650000EB43C /* CassiniViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CassiniViewController.swift; sourceTree = "<group>"; };
 		E27354D026167650000EB43C /* DemoURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoURL.swift; sourceTree = "<group>"; };
-		E27354D126167650000EB43C /* CassiniAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CassiniAppDelegate.swift; sourceTree = "<group>"; };
 		E2A00C5E25F14E790096474D /* CalculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 		E2A00C5F25F14E790096474D /* CalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
-		E2A00C6025F14E790096474D /* CalculatorAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorAppDelegate.swift; sourceTree = "<group>"; };
 		E2D2A64325EA9BAD008094A1 /* DropitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropitViewController.swift; sourceTree = "<group>"; };
 		E2D2A64525EA9BAD008094A1 /* BezierPathsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BezierPathsView.swift; sourceTree = "<group>"; };
 		E2D2A64A25EA9BAD008094A1 /* DropitBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropitBehavior.swift; sourceTree = "<group>"; };
-		E2D2A64B25EA9BAD008094A1 /* DropitAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropitAppDelegate.swift; sourceTree = "<group>"; };
 		E2D2A66325EAA4EE008094A1 /* AutolayoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutolayoutViewController.swift; sourceTree = "<group>"; };
 		E2D2A66525EAA4EE008094A1 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		E2D2A66A25EAA4EE008094A1 /* AutolayoutAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutolayoutAppDelegate.swift; sourceTree = "<group>"; };
 		E2D2A68725EAA85D008094A1 /* DiagnosedHappinessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiagnosedHappinessViewController.swift; sourceTree = "<group>"; };
 		E2D2A68825EAA85D008094A1 /* HappinessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HappinessViewController.swift; sourceTree = "<group>"; };
 		E2D2A68925EAA85D008094A1 /* PsychologistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PsychologistViewController.swift; sourceTree = "<group>"; };
-		E2D2A68A25EAA85D008094A1 /* PsychologistAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PsychologistAppDelegate.swift; sourceTree = "<group>"; };
 		E2D2A68B25EAA85D008094A1 /* Faceview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Faceview.swift; sourceTree = "<group>"; };
 		E2D2A68C25EAA85D008094A1 /* TextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		E2E3723525E9CB5A0006C50B /* Sandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,7 +71,6 @@
 				E27354CA26167650000EB43C /* ImageViewController.swift */,
 				E27354CF26167650000EB43C /* CassiniViewController.swift */,
 				E27354D026167650000EB43C /* DemoURL.swift */,
-				E27354D126167650000EB43C /* CassiniAppDelegate.swift */,
 			);
 			path = Cassini;
 			sourceTree = "<group>";
@@ -91,7 +80,6 @@
 			children = (
 				E2A00C5E25F14E790096474D /* CalculatorBrain.swift */,
 				E2A00C5F25F14E790096474D /* CalculatorViewController.swift */,
-				E2A00C6025F14E790096474D /* CalculatorAppDelegate.swift */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -102,7 +90,6 @@
 				E2D2A64325EA9BAD008094A1 /* DropitViewController.swift */,
 				E2D2A64525EA9BAD008094A1 /* BezierPathsView.swift */,
 				E2D2A64A25EA9BAD008094A1 /* DropitBehavior.swift */,
-				E2D2A64B25EA9BAD008094A1 /* DropitAppDelegate.swift */,
 			);
 			path = Dropit;
 			sourceTree = "<group>";
@@ -112,7 +99,6 @@
 			children = (
 				E2D2A66325EAA4EE008094A1 /* AutolayoutViewController.swift */,
 				E2D2A66525EAA4EE008094A1 /* User.swift */,
-				E2D2A66A25EAA4EE008094A1 /* AutolayoutAppDelegate.swift */,
 			);
 			path = Autolayout;
 			sourceTree = "<group>";
@@ -123,7 +109,6 @@
 				E2D2A68725EAA85D008094A1 /* DiagnosedHappinessViewController.swift */,
 				E2D2A68825EAA85D008094A1 /* HappinessViewController.swift */,
 				E2D2A68925EAA85D008094A1 /* PsychologistViewController.swift */,
-				E2D2A68A25EAA85D008094A1 /* PsychologistAppDelegate.swift */,
 				E2D2A68B25EAA85D008094A1 /* Faceview.swift */,
 				E2D2A68C25EAA85D008094A1 /* TextViewController.swift */,
 			);
@@ -235,14 +220,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E27354D926167650000EB43C /* CassiniAppDelegate.swift in Sources */,
-				E2A00C6325F14E790096474D /* CalculatorAppDelegate.swift in Sources */,
 				E2D2A64E25EA9BAD008094A1 /* BezierPathsView.swift in Sources */,
 				E2D2A65125EA9BAD008094A1 /* DropitBehavior.swift in Sources */,
 				E27354D726167650000EB43C /* CassiniViewController.swift in Sources */,
-				E2D2A67025EAA4EE008094A1 /* AutolayoutAppDelegate.swift in Sources */,
 				E2D2A64C25EA9BAD008094A1 /* DropitViewController.swift in Sources */,
-				E2D2A65225EA9BAD008094A1 /* DropitAppDelegate.swift in Sources */,
 				E2D2A69225EAA85D008094A1 /* TextViewController.swift in Sources */,
 				E27354D826167650000EB43C /* DemoURL.swift in Sources */,
 				E2D2A66D25EAA4EE008094A1 /* User.swift in Sources */,
@@ -251,7 +232,6 @@
 				E2D2A68E25EAA85D008094A1 /* HappinessViewController.swift in Sources */,
 				E2E3723D25E9CB5A0006C50B /* ViewController.swift in Sources */,
 				E2D2A69125EAA85D008094A1 /* Faceview.swift in Sources */,
-				E2D2A69025EAA85D008094A1 /* PsychologistAppDelegate.swift in Sources */,
 				E2E3723925E9CB5A0006C50B /* AppDelegate.swift in Sources */,
 				E2A00C6225F14E790096474D /* CalculatorViewController.swift in Sources */,
 				E27354D426167650000EB43C /* ImageViewController.swift in Sources */,
@@ -401,7 +381,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8T595WJ7W8;
+				DEVELOPMENT_TEAM = 3A9CX99HJE;
 				INFOPLIST_FILE = Sandbox/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -420,7 +400,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8T595WJ7W8;
+				DEVELOPMENT_TEAM = 3A9CX99HJE;
 				INFOPLIST_FILE = Sandbox/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
